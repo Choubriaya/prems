@@ -1,72 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif ;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
 header {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-    border-bottom: 1px solid white ;
+	height: 9vh;
+	width: 100%;
+	background-color:white;
+	display: flex;
 }
 
-.logo {
-    font-size: 25px;
-    font-weight: bold;
+h2 {
+	width: 15%;
+	height: 100%;
+	padding: 20px;
+	font-size: 50px;
+	font-weight: 600;
+} 
+
+nav{
+	width: 60%;
+	height: 100%;
+    padding: 20px;
+	font-size: 25px;
+	gap : 40px;
+	align-items: center;
+	display: flex;
+	margin-left: 200px ;
+}
+nav > a{
+	text-decoration: none;
+	color: #0A1222;
+}
+nav > .active{
+	text-decoration: none;
+	color : #034BFF;
+	border-bottom: 3px solid #034BFF ;
 }
 
-.menu {
-    position: absolute;
-    top: 0;
-    left: 300px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-}
-
-.menu ul {
-    display: flex;
-    gap: 30px;
-}
-
-.menu a {
-    color: black;
-    font-size: 14px;
-}
-
-.header-buttons {
-    position: absolute;
+.header-button {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	text-align: center;
     right: 40px;
     top: 15px;
-
-    display: flex;
-    align-items: center;
-    gap: 15px;
+   
 }
 
-.search {
-    width: 50px;
+.header-button > .search{
+	font-size: 32px;
+	background-color: transparent;
+	border: none;
+	margin-left: 80px;
+	padding: 25px 0px;
+	width: 50px;
     height: 50px;
-    background-color: white;
-    border: 2px solid rgba(0, 0, 255, 0.244) ;
-    font-size: 20px;
 }
 
-.join {
-    height: 50px;
-    padding: 0 25px;
-
-    background-color: rgba(0, 0, 255, 0.55);
+.header-button > .join{
+	width: 250px;
+	height: 60px;
+	font-size: 23px;
+	border: none;
     color: white;
-
-    border: none;
-    font-weight: bold;
-    font-size: 14px;
+    border-radius: 10px;
+    background-color:#034BFF;
+	margin: 20px 10px;
 }
 
+
+
+
+
+.Hero{
+	height:75vh;
+	background-color:#08111D;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Hero-txt{
+	margin-left: 200px;
+	margin-top: 80px;
+	color:white ;
+}
+.Hero-txt > h1{
+	font-size: 155px;
+	position: relative;
+	line-height:0.9;
+}
+.Hero-txt > h1 > span{
+	color: #034BFF;
+}
+
+.Hero-txt > h1 > .icon {
+	color: #C7F64A;
+	position: absolute;
+	margin-left:50px;
+}
+
+.Hero-txt > p{
+	font-size: 25px;
+	margin-top: 20px;;
+}
+.Hero-txt > h4{
+	font-size: 50px;
+}
+.discover{
+	width:300px;
+	height: 70px;
+	font-size: 20px;
+	background-color: #034BFF;
+	border: none;
+	border-radius: 15px;
+	margin-top: 40px;
+	color:#FFFFFF;
+}
+.events{
+	width:300px;
+	height: 70px;
+	font-size: 20px;
+	background-color: transparent;
+	border: 2px solid #8EABFF;
+	border-radius: 15px;
+	margin-top: 35px;
+	margin-left: 40px;
+	color:#FFFFFF;
+}
+
+
+.bulle{
+	display: flex;
+}
+
+ .bulle > span{
+ border-radius:50% ;
+ margin-top: 25px;
+ color:#0A1222;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: 800;
+ font-size:22px;
+ width:45px;
+ height: 45px;
+ margin-left: -5px;
+}
+
+.bulle > .bulle-BLEU{
+background-color: #B8C9CF;
+}
+ 
+.bulle  > .bulle-rose{
+background-color: #D7C3B6;
+}
+
+.bulle > .tt{
+	color :white;
+	font-size: 15px;
+	margin-top:30px ;
+	margin-left: 30px;
+}
+
+
+
+
+.statistiques{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+}
+
+.statistiques > .stat-cont {
+    display:flex;
+    width: 25%;
+	align-items:center;
+	height: 15.7vh;
+	background-color:white;
+	gap:20px ;
+}
+
+.stat-cont > div:nth-child(1) {
+	height: 100px;
+	width: 50px ;
+	font-size : 70px;
+	margin:0 35px 0 35px;
+	color: #034BFF;
+	
+}
+.stat-cont > div:nth-child(2) {
+    height: 100px;
+	width: 60px ;
+	margin:0 35px 0 35px;
+}
+
+.environement{
+	width:100%;
+	height:110vh ;
+	background-color: coral;
+	display: flex ;
+}
+
+.environement > .textt{
+	width:40%;
+	height:65vh;
+    background-color:blue ;
+} 
+
+.environement > .pics{
+	width:60% ;
+	height: 65vh ;
+	background-color:#08111D;
+}
